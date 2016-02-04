@@ -14,6 +14,19 @@ import java.util.Date;
  */
 public class Manager extends Employee {
 private Employee employee;
+
+ public void OrientNewEmployee(String firstName, String lastName, String ssn) {
+        Employee e = new Employee();
+        e.setFirstName(firstName);
+        e.setLastName(lastName);
+        e.setSsn(ssn);
+        e.NewEmployee("A101");
+        employee = e;
+    }
+    
+    public String getEmployeeStatus() {
+        return employee.getStatus();
+    }
     
     
      
