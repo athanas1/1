@@ -20,11 +20,11 @@ public class Startup {
             not have to be a GUI class.
         */
         Employee employee = new Employee();
-        employee.firstName = "Peter";
+        employee.firstName("Peter");
         employee.lastName = "Piper";
         employee.ssn = "333-1234";
         
-        employee.meetDepartmentStaff();
+        Employee.meetDepartmentStaff();
         employee.meetWithHrForBenefitAndSalryInfo();
         employee.reviewDeptPolicies();
 
