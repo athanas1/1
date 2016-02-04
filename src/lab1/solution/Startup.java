@@ -20,8 +20,9 @@ public class Startup {
             not have to be a GUI class.
         */
         HRManager hr = new HRManager();
-        hr.orientNewEmployee("John", "Smith", "333-33-3333");
+        hr.HireEmployee("John", "Smith", "333-33-3333");
 
+        hr.OrientNewEmployee();
         System.out.println("The employee's status is: " + hr.getEmployeeStatus());
     }
     

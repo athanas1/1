@@ -102,11 +102,15 @@ public class Employee {
         }
     }
 
+    //Make sure you you validate methods
     public String getFirstName() {
         return firstName;
     }
 
     public void setFirstName(String firstName) {
+        if(firstName == null || firstName.length() < 2){
+            System.out.println("NEED A ALLOWED FIRST NAME");
+        }
         this.firstName = firstName;
     }
 
